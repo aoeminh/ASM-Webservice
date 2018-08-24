@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://service.example.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.example.com/">
+
+<xs:element name="checkClient" type="tns:checkClient"/>
+
+<xs:element name="checkClientResponse" type="tns:checkClientResponse"/>
+
+<xs:element name="checkPartner" type="tns:checkPartner"/>
+
+<xs:element name="checkPartnerResponse" type="tns:checkPartnerResponse"/>
+
+<xs:element name="client" type="tns:client"/>
+
+<xs:element name="getPartnerHis" type="tns:getPartnerHis"/>
+
+<xs:element name="getPartnerHisResponse" type="tns:getPartnerHisResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="partner" type="tns:partner"/>
+
+<xs:element name="partnerHis" type="tns:partnerHis"/>
+
+<xs:element name="partnerHisResponse" type="tns:partnerHisResponse"/>
+
+<xs:element name="partnerhistory" type="tns:partnerhistory"/>
+
+<xs:element name="test" type="tns:test"/>
+
+<xs:element name="testResponse" type="tns:testResponse"/>
+
+<xs:element name="updateCLientMoney" type="tns:updateCLientMoney"/>
+
+<xs:element name="updateCLientMoneyResponse" type="tns:updateCLientMoneyResponse"/>
+
+<xs:element name="updatePartnerMoney" type="tns:updatePartnerMoney"/>
+
+<xs:element name="updatePartnerMoneyResponse" type="tns:updatePartnerMoneyResponse"/>
+
+<xs:element name="userHis" type="tns:userHis"/>
+
+<xs:element name="userHisResponse" type="tns:userHisResponse"/>
+
+<xs:complexType name="userHis">
+<xs:sequence>
+<xs:element name="transname" type="xs:string" minOccurs="0"/>
+<xs:element name="money" type="xs:int"/>
+<xs:element name="fee" type="xs:int"/>
+<xs:element name="clientid" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="userHisResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkClient">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkClientResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:client" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="client">
+<xs:sequence>
+<xs:element name="clienid" type="xs:string" minOccurs="0"/>
+<xs:element name="cmoney" type="xs:int" minOccurs="0"/>
+<xs:element name="cpassword" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatePartnerMoney">
+<xs:sequence>
+<xs:element name="partnerid" type="xs:string" minOccurs="0"/>
+<xs:element name="money" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updatePartnerMoneyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkPartner">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkPartnerResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:partner" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="partner">
+<xs:sequence>
+<xs:element name="partneraccount" type="xs:string" minOccurs="0"/>
+<xs:element name="partnerid" type="xs:string" minOccurs="0"/>
+<xs:element name="partnermoney" type="xs:int" minOccurs="0"/>
+<xs:element name="partnerpassword" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="partnerHis">
+<xs:sequence>
+<xs:element name="transname" type="xs:string" minOccurs="0"/>
+<xs:element name="money" type="xs:int"/>
+<xs:element name="fee" type="xs:int"/>
+<xs:element name="partnerid" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="partnerHisResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="test">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="testResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateCLientMoney">
+<xs:sequence>
+<xs:element name="clienid" type="xs:string" minOccurs="0"/>
+<xs:element name="money" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateCLientMoneyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPartnerHis">
+<xs:sequence>
+<xs:element name="partnerid" type="xs:string" minOccurs="0"/>
+<xs:element name="startDate" type="xs:string" minOccurs="0"/>
+<xs:element name="endDate" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPartnerHisResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:partnerhistory" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="partnerhistory">
+<xs:sequence>
+<xs:element name="tdate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="tpartnerid" type="tns:partner" minOccurs="0"/>
+<xs:element name="transfee" type="xs:double" minOccurs="0"/>
+<xs:element name="transid" type="xs:int" minOccurs="0"/>
+<xs:element name="transmoney" type="xs:double" minOccurs="0"/>
+<xs:element name="transname" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

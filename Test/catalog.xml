@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/ASMWebservice-war/LoginWebservie?WSDL" uri="src/conf/xml-resources/web-service-references/LoginWebservie/wsdl/localhost_8080/ASMWebservice-war/LoginWebservie.wsdl"/>
+    <system systemId="http://localhost:8080/ASMWebservice-war/LoginWebservie?xsd=1" uri="src/conf/xml-resources/web-service-references/LoginWebservie/wsdl/localhost_8080/ASMWebservice-war/LoginWebservie.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ASMWebservice-war/CheckPartnerService?WSDL" uri="src/conf/xml-resources/web-service-references/CheckPartnerService/wsdl/localhost_8080/ASMWebservice-war/CheckPartnerService.wsdl"/>
+    <system systemId="http://localhost:8080/ASMWebservice-war/CheckPartnerService?xsd=1" uri="src/conf/xml-resources/web-service-references/CheckPartnerService/wsdl/localhost_8080/ASMWebservice-war/CheckPartnerService.xsd_1.xsd"/>
+</catalog>
